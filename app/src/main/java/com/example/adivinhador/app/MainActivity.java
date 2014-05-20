@@ -1,4 +1,5 @@
 package com.example.adivinhador.app;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -8,9 +9,9 @@ import android.view.View;
 import android.widget.Button;
 
 import java.util.Random;
+
 public class MainActivity extends ActionBarActivity {
-    Button botao;
-    Intent intent;
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +20,13 @@ public class MainActivity extends ActionBarActivity {
 
         setContentView(R.layout.activity_main);
 
-        botao = (Button)findViewById(R.id.button);
+        Button botao = (Button) findViewById(R.id.button);
 
-            botao.setOnClickListener(new View.OnClickListener() {
+        botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                intent = new Intent(MainActivity.this,SecondaryActivity1.class );
+                Intent intent = new Intent(MainActivity.this, SecondaryActivity1.class);
 
                 Random random = new Random();
 
@@ -33,14 +34,15 @@ public class MainActivity extends ActionBarActivity {
 
                 final int sortead = random.nextInt(40);
 
-                intent.putExtra("numero",sorteado);
+                intent.putExtra("numero", sorteado);
 
-                intent.putExtra("numer",sortead);
+                intent.putExtra("numer", sortead);
 
                 startActivity(intent);
             }
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -48,9 +50,10 @@ public class MainActivity extends ActionBarActivity {
 
         getMenuInflater().inflate(R.menu.main, menu);
 
-       return true;
+        return true;
 
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
