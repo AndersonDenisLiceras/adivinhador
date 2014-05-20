@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.adivinhador.app.SecondaryActivity2"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg10"
+        android:id="@+id/checkedTextView"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg11"
+        android:id="@+id/checkedTextView2"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg12"
+        android:id="@+id/checkedTextView3"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg13"
+        android:id="@+id/checkedTextView4"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/msg6"
+        android:id="@+id/textView"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/msg7"
+        android:id="@+id/textView2"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/msg14"
+        android:id="@+id/textView3"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/msg15"
+        android:id="@+id/textView4"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@id/button"
+        android:singleLine="true"
+        android:textStyle="bold|italic"
+        android:gravity="center" />
+
+</LinearLayout>
